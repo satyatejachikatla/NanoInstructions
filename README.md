@@ -75,3 +75,8 @@ sudo sh get-docker.sh
 ```
 sudo apt-get install docker.io
 ```
+
+### Formatin /dev/sda (hardisk)
+
+Use the tool to partition from settings in the gui
+It will same some headache
