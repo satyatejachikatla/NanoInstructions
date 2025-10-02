@@ -10,6 +10,9 @@ services:
       - type: bind
         source: /media/nano/Backup
         target: /media
+    ports: 
+      - 8096:8096
+      - 8920:8920
     restart: 'unless-stopped'
     # Optional - alternative address used for autodiscovery
     environment:

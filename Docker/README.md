@@ -22,3 +22,9 @@ After that
 systemctl daemon-reload 
 systemctl restart docker.service
 ```
+
+### For Docker compose cmd
+
+```
+apt-get install docker-compose-plugin
+```
