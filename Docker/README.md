@@ -4,11 +4,19 @@
 
 Ensured to set the docker service to only start after certain mount points are available
 
-Edited following in /lib/systemd/system/docker.service
+To do that enter overide conf
 ```
-[Unit]
-RequiresMountsFor=/media/nano/Backup /media/nano/DockerWorkspace
+sudo systemctl edit docker.service
 ```
+
+```
+[Unit]                                                                                                                                          
+RequiresMountsFor=/media/nano/DockerWorkspace /media/nano/Backup
+
+[Service]
+ExecStartPre=/bin/sleep 60   
+```
+
 After that
 ```
 systemctl daemon-reload 
